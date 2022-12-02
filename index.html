@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="shortcut icon" href="img/logow.png" type="image/x-png">
+  <meta charset="utf-8">
+  <title>Exemplo de Uso Webchat</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+
+</head>
+
+<body data-spy="scroll" data-offset="64" data-target="#section-topbar">
+
+  
+<div style="text-align:center">
+  
+    <h1>
+      Exemplo de utilização no site
+    </h1>
+ 
+</div>
+<!-- SZ.chat - Código para o Webchat -->
+<script type="text/javascript">
+  (function(s, z, c, h, a, t) {
+    s.webchat = s.webchat || function() {
+      (s.webchat.q = s.webchat.q || []).push(arguments);
+    };
+    t = z.createElement(c),
+      a = z.getElementsByTagName(c)[0]; t.async = 1;
+    t.src = 'https://robomind.sz.chat/webchat/v2/webchat.js'; 
+    a.parentNode.insertBefore(t, a);
+    s.webchat('cid', '6369e3b6867f340018bef6b2');
+    s.webchat('host', h);
+  })(window, document, 'script', 'https://robomind.sz.chat');
+  window.addEventListener("message", function(event) {
+    if(event.origin !== 'https://robomind.sz.chat') return;
+  },false);
+</script>
+  
+
+</body>
+</html>
